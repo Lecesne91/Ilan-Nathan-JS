@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streaming - Accueil</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/sections/header.css">
+    <link rel="stylesheet" href="css/sections/result.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
-        <h1>Movie Maker</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Rechercher un film..." id="search">
-            <button type="button">Rechercher</button>
-        </div>
+        <nav>
+            <div class="logo">
+                <img src="films-app_assets/assets/1-removebg-preview.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="text" id="movie-name" placeholder="Entre le nom du film ici..." value="Suits">
+                <button id="search-btn">Rechercher</button>
+            </div>
+            <div class="toggle-theme">
+                <button id="theme-btn">Mode clair</button>
+            </div>
+        </nav>
     </header>
+    
     <main class="main-content">
         <h2>Films Populaires</h2>
         <div class="movie-list">
