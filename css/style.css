@@ -9,11 +9,11 @@
     --bgColor: var(--bgColor-dark);
     --textColor: var(--textColor-dark);
 
-      /* Mode clair */
+
       --bgColor-light: #FFFFFF;
       --textColor-light: #333333;
   
-      /* Mode sombre */
+
       --bgColor-dark: #121218;
       --textColor-dark: #FFFFFF;
   

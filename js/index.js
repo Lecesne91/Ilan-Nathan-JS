@@ -7,15 +7,15 @@ let getMovie = () => {
     let movieName = movieNameRef.value;
     let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
 
-    // Si le champ input est vide
+ 
 
     if (movieName.length <= 0) {
         result.innerHTML = `<h3 class="msg">Merci d'entrer un nom de film</h3>`;
     }
-    // Si le champ Input n'est pas vide
+ 
     else {
         fetch(url).then((resp) => resp.json()).then((data) => {
-            // Si le film existe dans la base de données
+
             if (data.Response == "True") {
                 result.innerHTML = `
                     <div class="info">
@@ -46,12 +46,12 @@ let getMovie = () => {
                 `;
             }
 
-            // Si le film n'existe pas dans la base de données
+
             else {
                 result.innerHTML = `<h3 class="msg">${data.Error}</h3>`;
             }
         })
-            // Si une erreur se produit
+
             .catch(() => {
                 result.innerHTML = `<h3 class="msg">>Il y a une erreur</h3>`;
             });
